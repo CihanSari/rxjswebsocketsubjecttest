@@ -5,7 +5,7 @@
   "scripts": {
     "server": "ts-node server.ts",
     "client": "ts-node client.ts",
-    "run": "concurrently \"ts-node server.ts\" \"ts-node client.ts\"  \"ts-node client2.ts\" --kill-others-on-fail"
+    "start": "concurrently \"ts-node server.ts\" \"ts-node client.ts\"  \"ts-node client2.ts\" --kill-others-on-fail"
   },
   "dependencies": {
     "concurrently": "^4.0.1",
