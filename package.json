@@ -1,0 +1,20 @@
+{
+  "name": "rxjswebsocketsubjecttest",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "server": "ts-node server.ts",
+    "client": "ts-node client.ts",
+    "run": "concurrently \"ts-node server.ts\" \"ts-node client.ts\"  \"ts-node client2.ts\" --kill-others-on-fail"
+  },
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "rxjs": "^6.2.2",
+    "ws": "^6.0.0",
+    "ts-node": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.0",
+    "typescript": "^3.0.1"
+  }
+}
